@@ -68,7 +68,7 @@ class DataFetchRequest: ObservableObject {
                         let totalDeaths = jsonCountry[index]["Total Deaths_text"].stringValue
                         let recovered = jsonCountry[index] ["Total Recovered_text"].stringValue
                         let newConfirmed = jsonCountry[index]["New Cases_text"].stringValue
-                        let newDeaths = jsonCountry[index]["New Cases_text"].stringValue
+                        let newDeaths = jsonCountry[index]["New Deaths_text"].stringValue
                         
                         
                         
