@@ -3,7 +3,8 @@
 //  CoronaTracking
 //
 //  Created by wenjuan wang on 19/03/2021.
-//
+
+
 
 import Foundation
 import Alamofire
@@ -49,26 +50,42 @@ class DataFetchRequest: ObservableObject {
             AF.request("https://covid-19-tracking.p.rapidapi.com/v1", headers: headers).responseJSON { response in
                 let result = response.value
                 var allCount : [CountryData] = []
+                
+                
+                
                 if result != nil {
-                    let dataDictionary = result as! [Dictionary<String,AnyObject>]
-                    for countryData in dataDictionary {
-                        let country = countryData["Country_text"] as? String ?? "error"
-                        let totalConfirmed = countryData["Total Cases_text"] as? Int64 ?? 0
-                        let totalDeaths = countryData["Total Deaths_text"] as? Int64 ?? 0
-                        let recovered = countryData["Total Recovered_text"] as? Int64 ?? 0
-                        let newConfirmed = countryData["New Cases_text"] as? Int64 ?? 0
-                        let newDeaths = countryData["New Cases_text"] as? Int64 ?? 0
-                        
-                        let countryObject = CountryData(country: country, totalConfirmed:totalConfirmed, newConfirmed:newConfirmed, totalDeaths:totalDeaths,newDeaths:newDeaths ,  recovered: recovered, isFavorite: false)
                     
-                        allCount.append(countryObject)
+                    let jsonCountry = JSON(result!)
+                    
+                    //countryData in dataDictionary
+                    for index in 0...jsonCountry.count - 1
+                
+                    {
+                        
+                        
+                        let country = jsonCountry[index]["Country_text"].stringValue
+                        let totalConfirmed = jsonCountry[index]["Total Cases_text"].stringValue
+                        let totalDeaths = jsonCountry[index]["Total Deaths_text"].stringValue
+                        let recovered = jsonCountry[index] ["Total Recovered_text"].stringValue
+                        let newConfirmed = jsonCountry[index]["New Cases_text"].stringValue
+                        let newDeaths = jsonCountry[index]["New Cases_text"].stringValue
+                        
+                        
+                        
+                        let countryObject = CountryData(country: country , totalConfirmed:totalConfirmed, newConfirmed:newConfirmed, totalDeaths:totalDeaths,newDeaths:newDeaths ,  recovered: recovered, isFavorite: false)
+                     
+                         allCount.append(countryObject)
+                
                     }
                 
                 }
                 allCount.remove(at: 0)
-                self.allCountries  = allCount.sorted(by: {$0.totalConfirmed > $1.totalConfirmed})
+                self.allCountries  = allCount
             }
         }
+    
+    
          
-    }
+    
 
+}

@@ -3,27 +3,7 @@
 //  CoronaTracking
 //
 //  Created by wenjuan wang on 20/03/2021.
-/*
- Spacer()
- Text(countryData.totalConfirmed.formatInt())
-     
-     .font(.subheadline)
-     .frame(height:40)
-     .padding(.leading,5)
- 
- Spacer()
- 
- Text(countryData.totalDeaths.formatInt())
-     .frame( width:50,height:40,alignment: .center)          .font(.subheadline)
-     .foregroundColor(.red)
-     .padding(.leading,5)
- 
- Spacer()
- 
- Text(countryData.recovered.formatInt())
-     .frame( width:50,height:40,alignment: .center)          .font(.subheadline)
-     .foregroundColor(.green)
-       */
+
 
 import SwiftUI
 

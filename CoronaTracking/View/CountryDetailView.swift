@@ -20,12 +20,12 @@ struct CountryDetailView: View {
             
             
             VStack{
-                CountryDetailRow(number:countryData.totalConfirmed.formatInt(),name: "Total Confirmed")
+                CountryDetailRow(number:countryData.totalConfirmed, name: "Total Confirmed")
                     .padding(.top)
-                CountryDetailRow(number:countryData.newConfirmed.formatInt(), name: "New Confirmed", color: .yellow)
-                CountryDetailRow(number:countryData.totalDeaths.formatInt(), name: "Total Deaths", color: .red)
-                CountryDetailRow(number:countryData.newDeaths.formatInt(), name: "New Death", color: .purple)
-                CountryDetailRow(number:countryData.recovered.formatInt(), name: "Recovered", color: .green)
+                CountryDetailRow(number:countryData.newConfirmed, name: "New Confirmed", color: .yellow)
+                CountryDetailRow(number:countryData.totalDeaths, name: "Total Deaths", color: .red)
+                CountryDetailRow(number:countryData.newDeaths, name: "New Death", color: .purple)
+                CountryDetailRow(number:countryData.recovered, name: "Recovered", color: .green)
            
                                  Button(favorites.contains(countryData) ? "Remove from Favorites":"Add to Favorites")
                      {

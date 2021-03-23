@@ -10,7 +10,6 @@
 		2D1410502605DE03002FBBC0 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14104F2605DE03002FBBC0 /* RecentView.swift */; };
 		2D1410552605DFCF002FBBC0 /* CoutryListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1410542605DFCF002FBBC0 /* CoutryListHeaderView.swift */; };
 		2D1410592605E186002FBBC0 /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1410582605E186002FBBC0 /* CountryRowView.swift */; };
-		2D14105D2605E42A002FBBC0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14105C2605E42A002FBBC0 /* Extension.swift */; };
 		2D1410662606411E002FBBC0 /* GlobalDataCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1410652606411E002FBBC0 /* GlobalDataCardView.swift */; };
 		2D14106A2606459F002FBBC0 /* TotalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1410692606459F002FBBC0 /* TotalDataView.swift */; };
 		2D1410702606595B002FBBC0 /* CountryDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D14106F2606595B002FBBC0 /* CountryDetailRow.swift */; };
@@ -33,7 +32,6 @@
 		2D14104F2605DE03002FBBC0 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
 		2D1410542605DFCF002FBBC0 /* CoutryListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoutryListHeaderView.swift; sourceTree = "<group>"; };
 		2D1410582605E186002FBBC0 /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
-		2D14105C2605E42A002FBBC0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		2D1410652606411E002FBBC0 /* GlobalDataCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDataCardView.swift; sourceTree = "<group>"; };
 		2D1410692606459F002FBBC0 /* TotalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDataView.swift; sourceTree = "<group>"; };
 		2D14106F2606595B002FBBC0 /* CountryDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailRow.swift; sourceTree = "<group>"; };
@@ -93,14 +91,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		2D141078260787BF002FBBC0 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2D14105C2605E42A002FBBC0 /* Extension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		2D5169922604ECAF004B9E56 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +112,6 @@
 		2D51699D2604ECAF004B9E56 /* CoronaTracking */ = {
 			isa = PBXGroup;
 			children = (
-				2D141078260787BF002FBBC0 /* Extension */,
 				2D141064260640EB002FBBC0 /* View */,
 				2D14104E2605DDCF002FBBC0 /* Model */,
 				2D51699E2604ECAF004B9E56 /* CoronaTrackingApp.swift */,
@@ -281,7 +270,6 @@
 				2D5169A12604ECAF004B9E56 /* ContentView.swift in Sources */,
 				2D1410552605DFCF002FBBC0 /* CoutryListHeaderView.swift in Sources */,
 				2D5169BD260538F4004B9E56 /* Model.swift in Sources */,
-				2D14105D2605E42A002FBBC0 /* Extension.swift in Sources */,
 				2D1410592605E186002FBBC0 /* CountryRowView.swift in Sources */,
 				2D5169BA2605363C004B9E56 /* DataFetchRequest.swift in Sources */,
 				2D14107326065A9F002FBBC0 /* CountryDetailView.swift in Sources */,
